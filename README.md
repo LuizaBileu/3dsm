@@ -1,2 +1,3 @@
-# 3dsm
-repositorio da turma 3ds
+
+# atividade raquelly
+esse repositório vai ser ultilizado nas aulas de criação de aplicativo. 
