@@ -1,0 +1,49 @@
+<script>
+    function lista_lifo() {
+        //Last in First out | último a entrar, primeiro a sair
+
+        let historico = ["homepage"];
+        historico.push("google.com"); //Adicionando ao topo da lista
+        historico.push("g1.com");
+        historico.push("ge.com");
+        alert(historico);
+        alert(`registro removido: ${historico.pop()}`); //Apagando o registro | O último registro adicionado à lista é removido
+    }
+
+    function lista_fifo() {
+        //First in First out | último a entrar, primeiro a sair
+
+        let fila = ["cappuccino"];
+        fila.push("latte")
+        fila.push("macchiato")
+        fila.push("mocha")
+        alert(fila)
+        fila.shift()
+        alert(fila)
+        alert(fila.shift())
+        alert(fila)
+    }
+    
+    function lista_set() {
+        convidados = new Set([ //Criando um objeto do tipo Set -> Uma lista onde cada elemento é único, ou seja, não é possível adicionar elementos iguais
+            "Marcos",
+            "Raquelly",
+            "Luiza",
+            "Vitória",
+            "Vinicius"
+        ])
+        
+        //Verificando os valores de uma lista do tipo set
+        alert(Array.from(convidados))
+        convidados.add("Vanessa") //Adicionando um elemento novo
+        convidados.add("Vinicius") //Adicionando um elemento novo | não será adicionado pois já tem um elmento desse na lista
+        alert(Array.from(convidados))
+        if(convidados.has("Raquelly")){
+            alert("Raquelly está na lista")
+        }
+    }
+
+    function lista_map() {
+        //Criando uma lista do tipo map                        
+    }
+</script>

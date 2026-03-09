@@ -1,0 +1,21 @@
+<script>
+    function teste() {
+        let bimestre = 0;
+        let minhasNotas = []
+        let somaNotas = 0;
+        let media = 0;
+        let quantidadeNotas = 4;
+
+
+        for (let i = 0; i < quantidadeNotas; i++) {
+            let bimestre = i + 1 //Inicia a contagem do bimestre com base na iteração atual
+            minhasNotas[i] = prompt(`Digite sua nota no ${bimestre}° bimestre: `) //Solicita a nota atual do aluno
+            somaNotas += parseInt(minhasNotas[i]) //Realiza a soma da nota de cada bimestre
+        }
+
+        media = parseInt(somaNotas / minhasNotas.length)
+        alert(`Sua media anual foi: ${media}`)
+    }
+    
+    teste()
+</script>

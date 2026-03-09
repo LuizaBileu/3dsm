@@ -1,0 +1,52 @@
+<script>
+
+    function Iterar() {
+        var lista = ["Raquelly", "Bileu", "Luiza", "Soares"]
+        
+        for (let i = 0; i < lista.length; i++) {
+            alert(`Item: ${ i + 1 }: ${ lista[i] }`)
+        }
+        
+        alert("Loop concluido")
+    }
+
+    function verificarMaiorValor() {
+        let numeros = [22, 32, 41, 4, 10, 94, 72] // Definindo o Array com os números 
+        let maiorNumero = 0 // definindo a variável do maior número
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > maiorNumero){ //Condição para a definição do maior número
+                maiorNumero = numeros[i]
+            }
+        }
+        alert(maiorNumero)
+    }
+    
+    function iteracaoContraria() {
+        let etapas = ["lavar", "passar", "dobrar"] // Definindo o Array com os números 
+        
+        for (let i = etapas.length - 1; i >= 0; i--) {
+            alert(`Etapa ${ i + 1 }: ${etapas[i]}`)
+        }
+    }
+
+        function teste() {
+        let bimestre = 0;
+        let minhasNotas = []
+        let somaNotas = 0;
+        let media = 0;
+        let quantidadeNotas = 4;
+
+
+        for (let i = 0; i < quantidadeNotas; i++) {
+            let bimestre = i + 1 //Inicia a contagem do bimestre com base na iteração atual
+            minhasNotas[i] = prompt(`Digite sua nota no ${bimestre}° bimestre: `) //Solicita a nota atual do aluno
+            somaNotas += parseInt(minhasNotas[i]) //Realiza a soma da nota de cada bimestre
+        }
+
+        media = parseInt(somaNotas / minhasNotas.length)
+        alert(`Sua media anual foi: ${media}`)
+    }
+    
+    teste()
+</script>
